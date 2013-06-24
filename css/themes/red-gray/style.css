@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+.db-table 		{ padding:0; border:1px solid #ccc; border-collapse:collapse; text-align:center; width:835px;}
+.db-table th	{ background:#444444;color: #FFF;padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+.db-table td	{ padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+.db-table td.clickable { cursor:pointer; width:16px; }
+.db-table tr.color { background-color:#E7E5E4; }
+
+.db-table ul { margin:10px 0 10px 20px; padding:0px; text-align:left; list-style:none; }
+.db-table li { margin:0; padding:1px 0; }
+
+
+.studentsdetail {clear:left; margin:0; padding:0; border:0; border-collapse:collapse; vertical-align:center; max-width:700px; }
+.studentsdetail td { border:0; padding:3px 0 3px 5px; text-align:left; }
+.studentsdetail td.ralign { border:0; padding:3px 0 3px 20px; text-align:right; }
+
+.sectionsdetail { background-color:transparent; float:left; margin:0; padding:0; border:0; border-collapse:collapse; vertical-align:center; width:750px;}
+.sectionsdetail th { background-color:transparent; color:#000; padding:5px; font-weight:bold; border:0;}
+.sectionsdetail td { border:0; padding:3px 0 3px 5px; text-align:center; }
+
+
+
+.errors {color: #D8000C;}
+
+.overlay-table 		{ margin-left:2px; padding:0; border:1px solid #ccc; border-collapse:collapse; text-align:center; width:670px;}
+.overlay-table th	{ background:#444444;color: #FFF;padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+.overlay-table td	{ padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+.overlay-table tr.color { background-color:#D7DAF7; }
+
+
+.sectioninline {
+    border: 0 none;
+    border-collapse: collapse;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.sectioninline th {
+    border: 0 none;
+    font-weight: bold;
+    padding: 3px 0 3px 5px;
+    text-align: center;
+}
+.sectioninline td {
+    border: 0 none;
+    padding: 3px 0 3px 5px;
+    text-align: center;
+}
+.sectioninline td.sectionleft {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #7F8689 -moz-use-text-color -moz-use-text-color;
+    border-style: none solid none none;
+    border-width: 0 1px 0 0;
+    line-height: 16px;
+    margin: 0;
+    padding: 3px 0 3px 20px;
+    text-align: center;
+    width: 257px;
+}
+.sectioninline td.sectionlefthead {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #7F8689 -moz-use-text-color -moz-use-text-color;
+    border-style: none solid none none;
+    border-width: 0 1px 0 0;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 0 6px 20px;
+    text-align: center;
+    width: 257px;
+}
+
+.sectioninline td.sectionright {
+    border: 0 none;
+    margin: 0;
+    padding: 3px 0 3px 20px;
+    text-align: center;
+    width: 690px;
+}
+
+.sectioninline td.sectionrighthead {
+    border: 0 none;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 0 6px 20px;
+    text-align: center;
+    width: 690px;
+}
+
+
+.centeredtable {
+    margin: 0 auto;
+}
+
+.centeredtable th {
+    font-weight: bold;
+    padding: 2px 15px;
+    background-color:transparent; 
+    color:#000;
+}
+
+.centeredtable td {
+    padding: 2px 15px;
+}
+
+
+/* the overlayed element */
+.simple_overlay {
+	 
+    /* must be initially hidden */
+    display:none;
+ 
+    /* place overlay on top of other elements */
+    z-index:10000;
+ 
+ 
+    width:675px;
+    min-height:300px;
+    border:1px solid #666;
+
+    /* white background */
+	background-color:#fff;
+	opacity:1.0;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    
+    
+    /* dark background */
+/*    background-color:#333; 
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000; */
+}
+ 
+
+/* close button positioned on upper right corner */
+.simple_overlay .close, .simple_overlay_adduser .close {
+    background-image:url(/tuitioninfo/media/img/overlay/close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    z-index:10001;
+    height:35px;
+    width:35px;
+}
+
+.simple_overlay_adduser {
+	 
+    /* must be initially hidden */
+    display:none;
+ 
+    /* place overlay on top of other elements */
+    z-index:10000;
+ 
+ 
+    width:715px;
+    padding: 15px;
+    min-height:300px;
+    border:1px solid #666;
+
+    /* white background */
+	background-color:#fff;
+	opacity:1.0;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    
+    
+    /* dark background */
+/*    background-color:#333; 
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000; */
+}
+ 
+
+ .triggers a {
+  cursor:pointer;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  width:120px;
+  margin-left:auto;
+  margin-right:auto;
+  background:none;
+  background-color:#444444;
+  color:#FFF;
+  border:1px solid #ccc;
+  padding:2px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  }
+
+
+
+#site_content .sidebar .triggers a {
+  cursor:pointer;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  width:190px;
+  margin-left:auto;
+  margin-right:auto;
+  background:none;
+  background-color:#444444;
+  color:#FFF;
+  border:1px solid #ccc;
+  padding:2px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  }
+ .triggers dl, #site_content  .sidebar .triggers dl 
+  {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+ }
+
+    /* styling for elements inside overlay */
+.simple_overlay .details
+ {
+  position:absolute;
+  max-height:300px;
+  max-width:675px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  }
+
+.simple_overlay .details h3
+ {
+  color:#575757;
+  font-size:13px; 
+  }
+
+body.noscroll
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
+body.scroll
+{
+    position: absolute; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
+ .square_button_users {
+  display:inline-block;
+  cursor:pointer; 
+  width:40px;
+  height:40px;
+  float:left;
+  border:1px solid #ccc;
+  margin:3px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  /*background: #314E71 url(24_users.png) no-repeat center;*/
+  background:none;
+  background-color:#444444;
+  }
+  
+
