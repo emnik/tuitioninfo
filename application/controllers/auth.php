@@ -72,6 +72,8 @@ class Auth extends CI_Controller {
 					->auth_model
 					->get_user_group($this->session->userdata('user_id'));
 				
+				sleep(5); //we need this to get the time to check the password!!!
+				
 				switch ($grp->name)
 				{
 					case 'admin':
@@ -96,7 +98,7 @@ class Auth extends CI_Controller {
 			}
 				
 		}
-		
+
 		$this->load->view('auth_login_view', $data);
 		$this->load->view('footer');
 	}	

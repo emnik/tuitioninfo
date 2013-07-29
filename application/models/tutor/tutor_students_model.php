@@ -34,7 +34,7 @@ class Tutor_students_model extends CI_Model
 			 ->join('employee', 'lesson_tutor.employee_id = employee.id')
 			 ->where('employee.id', $member_id)
 			 ->where('registration.id >=', $min_reg_id)
-			 ->where('registration.del_lessons_dt is null', `null`)
+			 //->where('registration.del_lessons_dt is null', `null`)
 			 ->group_by('registration.id')
 			 ->order_by('registration.surname')
 			 ->order_by('registration.name');
